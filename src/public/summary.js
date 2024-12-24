@@ -2,7 +2,7 @@ class ArticleSummary {
   constructor(options = {}) {
     this.options = {
       selector: options.selector || '#article-content',
-      apiUrl: options.apiUrl || 'http://localhost:3000/api/summary',
+      apiUrl: options.apiUrl || '/api/summary',
       maxLength: options.maxLength || 200,
       position: options.position || 'before', // 'before' 或 'after'
       ...options
