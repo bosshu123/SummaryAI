@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章摘要生成器示例</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>文章摘要生成器示例</h1>
+        
+        <div id="article-content">
+            <h2>示例文章标题</h2>
+            <p>这里是您的文章内容。系统会自动分析这段文字并生成摘要。您可以在这里放置任何长度的文章内容，AI会自动处理并生成适当长度的摘要。</p>
+            <p>摘要生成器会考虑文章的主要观点和关键信息，生成简洁而准确的摘要。这个过程是完全自动化的，无需人工干预。</p>
+            <p>系统使用了先进的AI技术，能够理解文章的上下文和主题，确保生成的摘要既准确又有意义。同时，为了提高效率，系统还实现了缓存机制，对于相同的文章内容只需生成一次摘要。</p>
+        </div>
+    </div>
+
+    <script src="summary.js"></script>
+    <script>
+        // 初始化摘要生成器
+        new ArticleSummary({
+            selector: '#article-content',
+            maxLength: 150,
+            position: 'before'
+        });
+    </script>
+</body>
+</html>
