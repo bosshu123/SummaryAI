@@ -1,51 +1,53 @@
-# SummaryAI - 文章摘要生成系统
+# SummaryAI - Article Summary Generation System
 
-一个基于AI的文章摘要自动生成系统，可以为任何文章内容生成简洁、准确的摘要。
+[English](README.md) | [中文](README_zh.md)
 
-## 特点
+An AI-powered article summary generation system that can create concise and accurate summaries for any article content.
 
-- 🚀 实时生成摘要
-- 💾 智能缓存机制
-- 🎨 美观的UI设计
-- 📱 响应式布局
-- ⚡ 简单易用的API
-- 🔒 支持自定义配置
+## Features
 
-## 快速开始
+- 🚀 Real-time summary generation
+- 💾 Intelligent caching mechanism
+- 🎨 Beautiful UI design
+- 📱 Responsive layout
+- ⚡ Simple and easy-to-use API
+- 🔒 Customizable configuration
 
-### 安装
+## Quick Start
+
+### Installation
 
 ```bash
-# 克隆项目
+# Clone the project
 git clone https://github.com/bosshu123/SummaryAI.git
 
-# 安装依赖
+# Install dependencies
 npm install
 
-# 配置环境变量
+# Configure environment variables
 cp .env.example .env
-# 编辑.env文件，添加你的OpenAI API密钥
-
+# Edit .env file and add your OpenAI API key
 ```
-可选：配置BASE_URL为免费的API地址 如 [GPT-API-free](https://github.com/chatanywhere/GPT_API_free?tab=readme-ov-file)
 
-### 运行
+Optional: Configure BASE_URL to use free API address such as [GPT-API-free](https://github.com/chatanywhere/GPT_API_free?tab=readme-ov-file)
+
+### Running
 
 ```bash
-# 启动开发服务器
+# Start development server
 npm run dev
 ```
 
-### 在你的网站中使用
+### Using in Your Website
 
-1. 引入CSS和JavaScript文件：
+1. Include CSS and JavaScript files:
 
 ```html
 <link rel="stylesheet" href="path/to/style.css">
 <script src="path/to/summary.js"></script>
 ```
 
-2. 初始化摘要生成器：
+2. Initialize the summary generator:
 
 ```html
 <script>
@@ -57,58 +59,58 @@ new ArticleSummary({
 </script>
 ```
 
-## 配置选项
+## Configuration Options
 
-| 选项 | 类型 | 默认值 | 描述 |
-|------|------|--------|------|
-| selector | string | '#article-content' | 文章内容的选择器 |
-| apiUrl | string | 'http://localhost:3000/api/summary' | API端点URL |
-| maxLength | number | 200 | 摘要最大字数 |
-| position | string | 'before' | 摘要显示位置（'before'或'after'） |
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| selector | string | '#article-content' | Selector for article content |
+| apiUrl | string | 'http://localhost:3000/api/summary' | API endpoint URL |
+| maxLength | number | 200 | Maximum summary length |
+| position | string | 'before' | Summary display position ('before' or 'after') |
 
-## API接口
+## API Interface
 
-### 生成摘要
+### Generate Summary
 
 ```http
 POST /api/summary
 Content-Type: application/json
 
 {
-    "text": "文章内容",
+    "text": "Article content",
     "maxLength": 200
 }
 ```
 
-响应：
+Response:
 
 ```json
 {
-    "summary": "生成的摘要内容"
+    "summary": "Generated summary content"
 }
 ```
 
-## 开发
+## Development
 
-### 项目结构
+### Project Structure
 
 ```
 src/
 ├── api/
-│   └── summary.js      # 后端API服务
+│   └── summary.js      # Backend API service
 ├── public/
-│   ├── index.html      # 示例页面
-│   ├── style.css       # 样式文件
-│   └── summary.js      # 前端JavaScript
+│   ├── index.html      # Example page
+│   ├── style.css       # Style file
+│   └── summary.js      # Frontend JavaScript
 └── utils/
-    └── textProcessor.js # 文本处理工具
+    └── textProcessor.js # Text processing utilities
 ```
 
-## 许可证
+## License
 
-保留所有权利。
+All rights reserved.
 
-### 使用限制
-- ✅ 允许个人使用、修改和优化
-- ❌ 禁止用于其他项目的商业用途
-- ❌ 禁止在未经授权的情况下重新分发
+### Usage Restrictions
+- ✅ Personal use, modification, and optimization allowed
+- ❌ Commercial use in other projects prohibited
+- ❌ Redistribution without authorization prohibited

@@ -5,3 +5,4 @@ devblacklist.json
 .env
 /node_modules
 package-lock.json
+wp-summaryai.zip
